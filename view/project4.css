@@ -1,0 +1,14 @@
+body {
+    background-color:#007c57a2;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;    
+    border: 2px outset #014ea7;
+    padding: 10px;
+}
+
+
+table, td {
+    border: 1px solid black;
+};
