@@ -16,11 +16,13 @@ function get_items_by_category($category_id) {
 function get_item($item_id) {
     global $db;
     $query = 'SELECT * FROM `todoitems` 
-                ORDER BY ItemNum';
+                WHERE ItemNum = :item_id';
     $statement = $db->prepare($query);
+    $statement->bindValue(':item_id', $item_id);
     $statement->execute();
-    $todoitems = $statement->fetchAll();
+    $item = $statement->fetch();
     $statement->closeCursor();
+    return $item;
 }
 
 function delete_item($item_id) {

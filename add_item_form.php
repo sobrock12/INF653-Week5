@@ -18,11 +18,11 @@
 <br>
 
 <label>Title:...............</label>
-<input type="text" name="title" />
+<input type="text" name="title" max="20" required>
 <br>
 
 <label>Description:....</label>
-<input type="text" name="description" />
+<input type="text" name="description" max="50" required>
 <br>
 
 <label>&nbsp;</label>
@@ -31,7 +31,7 @@
 
 </form>
 
-<a href="index.php?action=list_items">View To Do Items</a>
+<p><a href="index.php?action=list_items">View To Do Items</a></p>
 
 </main>
 

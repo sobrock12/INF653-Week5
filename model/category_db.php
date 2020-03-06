@@ -49,3 +49,5 @@ function add_category($categoryName) {
     $statement->closeCursor();
 
 }
+
+?>
